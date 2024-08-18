@@ -37,7 +37,7 @@ Controls the ESP-01 and OV7670 camera. This project is written in C++ and is com
 The code for this project will be asked from ChatGPT, and placed in github for both developer and chatgpt to use for further reference. MS2 (milestone 2) for the robot car will be when the camera is able to move around and capture images of the robot car's surroundings. The camera will be able to pan and tilt to capture images from different angles, and the images will be displayed on the web interface. The robot car will be able to move around and capture images of its surroundings, providing a comprehensive view of the environment. This will be MS2 for the robot car.
 
 ### ESP1WS
-Controls the ESP-01 and the webserver. This project should do as much of the webserver, web serving and camera control as possible since the ESP-01 is already quite a powerful microcontroller. This project is written in C++ and is compiled with VS Code and PlatformIO. The project is uploaded to the ESP-01 module on the robot car. The project is responsible for establishing a web server that allows users to interact with the robot car. The web server provides a user-friendly interface for controlling the robot car and viewing its surroundings through the camera. The code for this project will be asked from ChatGPT, and placed in github for both developer and chatgpt to use for further reference. This is a part of MS2 
+Controls the ESP-01 and the webserver. ESP-01 is connected to ARD2. This project should do as much of the webserver, web serving and camera control as possible since the ESP-01 is already quite a powerful microcontroller. This project is written in C++ and is compiled with VS Code and PlatformIO. The project is uploaded to the ESP-01 module on the robot car. The project is responsible for establishing a web server that allows users to interact with the robot car. The web server provides a user-friendly interface for controlling the robot car and viewing its surroundings through the camera. The code for this project will be asked from ChatGPT, and placed in github for both developer and chatgpt to use for further reference. This is a part of MS2 
 
 ## Hardware
 **The project can use the following HW (but is not limited to).**
@@ -132,6 +132,10 @@ The RoboCar is equipped with a SparkFun microSD Transflash Breakout, which allow
 
 ## Camera and storing/sending picture
 There's a lot of space on the microSD card to store pictures. The pictures can be sent to a webserver which can be accessed by the owner of the robot car. The pictures can be stored on the microSD card for later viewing or analysis. The camera can be controlled through the web interface, allowing the user to capture images of the robot car's surroundings. The camera can pan and tilt to capture images from different angles, providing a comprehensive view of the environment. The pictures can be sent to the webserver for viewing or storage, enhancing the robot car's functionality and capabilities. Put as much of the graphics processing to ESP-01 since it has a lot of power.
+
+## ARD1 to ARD2 Communication
+
+The Arduinos communicate with each other via serial and notify each other of status changes. 
 
 ## Absolutely all HW components (many might not be needed!)
 - 2x Micro Arduino
